@@ -11,8 +11,9 @@ import "@haxtheweb/rpg-character/rpg-character.js";
 * `Project-2a`
 *
 * @demo index.html
-* @element Project-2a
+* @element project-2a
 */
+
 export class Project2a extends DDDSuper(I18NMixin(LitElement)) {
   static get tag() {
     return "project-2a";
