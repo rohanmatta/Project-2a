@@ -43,12 +43,7 @@ export class Project2a extends DDDSuper(I18NMixin(LitElement)) {
       ...this.t,
       title: "Title",
     };
-    this.registerLocalization({
-      context: this,
-      localesPath:
-        new URL("./locales/project-2a.ar.json", import.meta.url).href + "/../",
-      locales: ["ar", "es", "hi", "zh"],
-    });
+    
   }
 
   static get properties() {
@@ -211,10 +206,6 @@ export class Project2a extends DDDSuper(I18NMixin(LitElement)) {
     });
   }
 
-  static get haxProperties() {
-    return new URL(`./lib/${this.tag}.haxProperties.json`, import.meta.url)
-      .href;
-  }
 }
 
 globalThis.customElements.define(Project2a.tag, Project2a);
